@@ -4,7 +4,7 @@ libdftw is a decentralized and distributed filesystem file treewalk function, si
 
 Dependencies
 ------------
-* [Libcircle](http://github.com/hpc/libdftw)
+* [Libcircle](http://github.com/hpc/libcircle)
 
 Usage
 -----
