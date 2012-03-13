@@ -11,6 +11,5 @@ Usage
 
 ```
 int dftw(const char *dirpath,
-         int (*fn) (const char *fpath, const struct stat *sb, int typeflag),
-         int flags);
+         int (*fn) (const char *fpath, const struct stat *sb, int typeflag))
 ```
