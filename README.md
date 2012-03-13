@@ -10,6 +10,6 @@ Usage
 -----
 
 ```
-int dftw(const char *dirpath,
+void dftw(const char *dirpath,
          int (*fn) (const char *fpath, const struct stat *sb, int typeflag))
 ```
