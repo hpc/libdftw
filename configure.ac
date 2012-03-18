@@ -27,5 +27,6 @@ AC_FUNC_LSTAT
 AC_SUBST([LIBDFTW_SO_VERSION], [0:0:0])
 AC_SUBST([LIBDFTW_API_VERSION], [0.1])
 
-AC_OUTPUT([Makefile      \
+AC_OUTPUT([Makefile \
+          example/Makefile \
           libdftw.pc:libdftw.pc.in])

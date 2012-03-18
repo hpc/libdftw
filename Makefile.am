@@ -3,6 +3,8 @@ include $(top_srcdir)/common.mk
 AUTOMAKE_OPTIONS = subdir-objects foreign
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
+SUBDIRS = example
+
 lib_LTLIBRARIES = libdftw.la
 
 libdftw_la_LDFLAGS = -version-info $(LIBDFTW_SO_VERSION)
