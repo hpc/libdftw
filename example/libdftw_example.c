@@ -13,7 +13,7 @@ display_info(const char *fpath, const struct stat *sb, int tflag) {
         (tflag == FTW_NS) ?  "ns"  : (tflag == FTW_F) ?   "f" : "???",
         (intmax_t) sb->st_size, fpath);
 
-    return 0;           /* To tell nftw() to continue */
+    return 0;           /* To tell dftw() to continue */
 }
 
 int main(int argc, char **argv)
