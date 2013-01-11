@@ -2,7 +2,7 @@
  * An example of using libdftw.
  */
 
-#include "libdftw_example.h"
+#include "dftw_test.h"
 
 static int
 display_info(const char *fpath, const struct stat *sb, int tflag) {

@@ -1,0 +1,10 @@
+*.o
+Makefile
+.deps
+stamp-h1
+/autom4te.cache
+/config.h*
+/config.log
+/config.status
+/libtool
+/tests/dftw_test

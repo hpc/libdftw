@@ -1,4 +1,4 @@
-AC_INIT([LibDftw],[0.0.2],[github-hpc@lanl.gov],[libdftw],[http://github.com/hpc/libdftw])
+AC_INIT([LibDftw],[0.1],[github-hpc@lanl.gov],[libdftw],[http://github.com/hpc/libdftw])
 
 # Keep artifacts in directories as much as possible.
 AC_CONFIG_AUX_DIR(auxdir)
@@ -10,9 +10,6 @@ AC_CONFIG_HEADERS([config.h])
 # Check for compilers.
 AC_PROG_CC
 AM_PROG_CC_C_O
-
-# Check for libcircle
-PKG_CHECK_MODULES([libcircle], libcircle)
 
 # Pull in libtool.
 LT_INIT
@@ -27,10 +24,9 @@ AC_FUNC_MALLOC
 AC_FUNC_LSTAT
 
 # Define the library version.
-AC_SUBST([LIBDFTW_SO_VERSION], [0:1:0])
-AC_SUBST([LIBDFTW_API_VERSION], [0.0.2])
+AC_SUBST([LIBDFTW_SO_VERSION], [0:0:0])
+AC_SUBST([LIBDFTW_API_VERSION], [0.1])
 
-AC_CONFIG_FILES([Makefile \
-                 tests/Makefile \
-                 libdftw.pc:libdftw.pc.in])
-AC_OUTPUT
+AC_OUTPUT([Makefile \
+          example/Makefile \
+          libdftw.pc:libdftw.pc.in])

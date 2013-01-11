@@ -1,14 +1,15 @@
 include $(top_srcdir)/common.mk
 
+SUBDIRS = . tests
+
 AUTOMAKE_OPTIONS = subdir-objects foreign
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
-
-SUBDIRS = example
 
 lib_LTLIBRARIES = libdftw.la
 
 libdftw_la_LDFLAGS = -version-info $(LIBDFTW_SO_VERSION)
 libdftw_la_SOURCES = libdftw/dftw.c
+libdftw_la_LIBADD = $(libcircle_LIBS)
 
 libdftw_includedir = $(includedir)/
 nobase_libdftw_include_HEADERS = libdftw.h
