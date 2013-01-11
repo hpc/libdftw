@@ -4,7 +4,9 @@ AC_INIT([LibDftw],[0.0.2],[github-hpc@lanl.gov],[libdftw],[http://github.com/hpc
 AC_CONFIG_AUX_DIR(auxdir)
 AC_CONFIG_MACRO_DIR([m4])
 
-AM_INIT_AUTOMAKE([-Wall no-define])
+AM_INIT_AUTOMAKE([foreign])
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+
 AC_CONFIG_HEADERS([config.h])
 
 # Check for compilers.
