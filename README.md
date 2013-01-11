@@ -1,5 +1,5 @@
-libdftw 0.0.1
-===============
+libdftw
+=======
 libdftw is a decentralized and distributed filesystem file treewalk function, similiar to ftw(3).
 
 Dependencies
