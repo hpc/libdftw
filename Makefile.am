@@ -25,6 +25,9 @@ MAINTAINERCLEANFILES =                                  \
         ltconfig ltmain.sh missing mkinstalldirs        \
         stamp-h.in
 
+test: all
+	mpirun -np 3 ./tests/dftw_test .
+
 distclean-local:
 	-(cd $(top_srcdir) && rm -rf autom4te*.cache autoscan.*)
 	-(cd $(top_srcdir) && rm -rf $(PACKAGE)-* libdftw.pc)

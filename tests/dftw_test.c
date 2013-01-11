@@ -1,5 +1,5 @@
 /*
- * An example of using libdftw.
+ * A very basic test of using libdftw.
  */
 
 #include "dftw_test.h"
