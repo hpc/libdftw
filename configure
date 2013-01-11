@@ -11966,7 +11966,7 @@ fi
 
 
 # Define the library version.
-LIBDFTW_SO_VERSION=0:1:0
+LIBDFTW_SO_VERSION=0:2:0
 
 LIBDFTW_API_VERSION=0.0.2
 
