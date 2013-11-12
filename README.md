@@ -21,7 +21,7 @@ First, check the [![Build Status](https://travis-ci.org/hpc/libdftw.png?branch=m
 2. ```rpm --install <the appropriate RPM files>```
 
 ### Contributions
-Please view the *HACKING.md* file for more information on how to contribute to dcp.
+Please view the *HACKING.md* file for more information on how to contribute to libdftw.
 
 ### COPYING
 See the included *COPYING* file for additional information.
